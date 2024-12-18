@@ -60,6 +60,8 @@ def guess(game_id):
     if game_id not in games:
         return {"error": "Game not found"}, 404
 
+    # <---- i changed this stuff here? !! seee green bar on the left. 
+
     guess = data.get("guess")
     if guess == None:
         return {"error": "no guess provided"}, 400
